@@ -1,0 +1,51 @@
+
+-- {{{ begin_fold
+-- script
+-- #!/usr/bin/env runhaskell -i/Users/cat/myfile/bitbucket/haskelllib
+{-# LANGUAGE CPP #-}
+-- {-# LANGUAGE OverloadedStrings #-}
+-- {-# LANGUAGE DuplicateRecordFields #-}
+-- {-# LANGUAGE CPP #-} 
+-- import Turtle
+-- echo "turtle"
+
+{-# LANGUAGE MultiWayIf        #-}
+{-# LANGUAGE QuasiQuotes       #-} -- support raw string [r|<p>dog</p> |]
+import Text.RawString.QQ       -- Need QuasiQuotes too 
+
+-- import Data.Set   -- collide with Data.List 
+import Control.Monad
+import Data.Char
+import Data.Typeable (typeOf) -- runtime type checker, typeOf "k"
+import qualified Data.List as L
+import Data.List.Split
+import Data.Time
+import Data.Time.Clock.POSIX
+import System.Directory
+import System.Environment
+import System.Exit
+import System.FilePath.Posix
+import System.IO
+import System.Posix.Files
+import System.Posix.Unistd
+import System.Process
+import Text.Read
+import Text.Regex
+import Text.Regex.Base
+import Text.Regex.Base.RegexLike
+import Text.Regex.Posix
+import Data.IORef 
+import Control.Monad (unless, when)
+import Control.Concurrent 
+import qualified System.Console.Pretty as SCP
+
+import qualified Text.Regex.TDFA as TD
+
+import AronModule 
+
+
+
+
+main = do 
+        pp "done!"
+		
